@@ -1,0 +1,135 @@
+/* Container global pour la vue (optionnel : ajouter une classe à la div principale si besoin) */
+.product-management-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Titre de la section */
+.section-title {
+  font-size: 26px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+/* Container de la liste des produits en mode grid pour un layout responsive et compact */
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+/* Carte produit */
+.product-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* Informations produit */
+.product-info {
+  padding: 10px;
+  text-align: center;
+}
+
+.product-info h3 {
+  font-size: 18px;
+  margin: 10px 0 5px;
+  color: #222;
+}
+
+.product-info p {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+
+.product-info .price {
+  font-size: 16px;
+  color: #e91e63;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+/* Formulaire d'ajout de produit */
+.add-product-form {
+  background: #f5f5f5;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 500px;  /* Container plus petit */
+  margin: 0 auto;
+}
+
+.add-product-form h3 {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Groupes de champs du formulaire */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #555;
+}
+
+.form-group input[type="file"] {
+  display: block;
+  width: 100%;
+  padding: 5px;
+}
+
+/* Aperçu de l'image */
+.image-preview {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.image-preview img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* Surcharge pour mat-form-field (champ Angular Material en pleine largeur) */
+mat-form-field.full-width {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+/* Bouton d'ajout */
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  background-color: #3f51b5;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #303f9f;
+}

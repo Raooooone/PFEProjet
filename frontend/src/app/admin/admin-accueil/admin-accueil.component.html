@@ -1,0 +1,18 @@
+<mat-toolbar class="navbar">
+  <div class="navbar-right">
+    <button mat-button (click)="showUserManagement()">Gestion Utilisateur</button>
+    <button mat-button (click)="showProductManagement()">Gestion Produit</button>
+  </div>
+</mat-toolbar>
+
+<div class="content">
+  <!-- Affiche la gestion des utilisateurs si isUserManagement est vrai -->
+  <div *ngIf="isUserManagement">
+    <app-user-managerment></app-user-managerment>
+  </div>
+
+  <!-- Affiche la gestion des produits si isProductManagement est vrai -->
+  <div *ngIf="isProductManagement">
+    <app-productmanagement></app-productmanagement>
+  </div>
+</div>
